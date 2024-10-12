@@ -1,0 +1,31 @@
+---
+import {Image} from "astro:assets";
+import Logo from "@/assets/images/logo.svg";
+---
+
+<header
+  class="flex flex-col items-center justify-center gap-[2.63rem] bg-[#111] px-6 pb-[4.87rem] pt-20 text-center sm:flex-row sm:items-start sm:justify-between sm:gap-[8.01rem] sm:pb-[3.88rem] sm:pl-[2.44rem] sm:pr-10 sm:pt-16 sm:text-left lg:px-[10.31rem] lg:pb-[4.75rem] lg:pt-[4.87rem]"
+>
+  <div class="">
+    <Image src={Logo} alt="Dine Logo." />
+  </div>
+  <!-- Address and Open Times Wrapper -->
+  <div class="flex flex-col gap-8 lg:flex-row lg:gap-[7.75rem]">
+    <!-- Address -->
+    <div
+      class="text-sm font-normal uppercase leading-7 tracking-[0.125rem] text-white sm:w-[28.5rem] lg:w-[15.25rem]"
+    >
+      <h3 class="">Marthwaite, Sedbergh</h3>
+      <h3 class="">Cumbria</h3>
+      <h3 class="">+00 44 123 4567</h3>
+    </div>
+    <!-- Open Times -->
+    <div
+      class="text-sm font-normal uppercase leading-7 tracking-[0.125rem] text-white sm:w-[28.5rem] lg:w-[27.875rem]"
+    >
+      <h3 class="">Open Times</h3>
+      <h3 class="">Mon - Fri: 09:00 AM - 10:00 PM</h3>
+      <h3 class="">Sat - Sun: 09:00 AM - 11:30 PM</h3>
+    </div>
+  </div>
+</header>
